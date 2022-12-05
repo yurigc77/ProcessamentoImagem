@@ -9,7 +9,7 @@ import prepro as pp
     
 yuri=cv.imread('./ass.jpg')
 yuri2=cv.imread('./ass2.jpg')
-maria=cv.imread('./assMaria.png')
+maria=cv.imread('./assMaria.jpg')
 luis=cv.imread('./assLuis.jpg')
 
 
@@ -41,6 +41,7 @@ cv.normalize(histmaria, histmaria, alpha=0, beta=1, norm_type=cv.NORM_MINMAX)
 
 histluis = cv.calcHist([luis], channels, None, histSize, ranges, accumulate=False)
 cv.normalize(histluis, histluis, alpha=0, beta=1, norm_type=cv.NORM_MINMAX)
+
 
 
 #for compare_method in range(4):
